@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+
+Sitemap: https://vishnorex.com/sitemap.xml
+
+Sitemap: https://demovishnorex.netlify.app/sitemap.xml
+
