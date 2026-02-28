@@ -495,7 +495,7 @@ h3 {
 /* Product Deck (Interactive Stack) */
 .product-deck-wrapper {
     position: relative;
-    height: 500px;
+    height: 560px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -508,7 +508,7 @@ h3 {
 .product-deck {
     position: relative;
     width: 320px;
-    height: 420px;
+    height: 480px;
     /* Apply the global 3D tilt here */
     transform: rotateY(-10deg) rotateX(5deg);
     transform-style: preserve-3d;
@@ -596,6 +596,58 @@ h3 {
     object-fit: contain;
     margin-bottom: 24px;
     border-radius: 12px;
+}
+
+/* Liblio Play Store Link & Badge */
+.liblio-logo-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.liblio-logo-link:hover {
+    transform: scale(1.08);
+}
+
+.liblio-logo-link .card-icon-img {
+    margin-bottom: 0;
+}
+
+.playstore-badge-link {
+    display: inline-block;
+    margin: 12px auto 0 auto;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    align-self: flex-start;
+}
+
+@media (max-width: 1024px) {
+    .playstore-badge-link {
+        align-self: center;
+    }
+}
+
+.playstore-badge-link:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.playstore-badge-img {
+    height: 38px;
+    width: auto;
+    display: block;
+}
+
+.playstore-panel-badge {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    flex-shrink: 0;
+}
+
+.playstore-panel-badge:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
 }
 
 .hero-card h3 {
@@ -2111,7 +2163,7 @@ footer {
 
     .product-deck-wrapper {
         margin-left: 0;
-        height: 480px;
+        height: 540px;
     }
 
     .bento-grid {
@@ -2425,19 +2477,22 @@ body.menu-open .page-content-wrapper::before {
     .product-deck {
         width: 100%;
         max-width: 280px;
-        height: 400px;
+        height: 480px;
         margin: 0 auto;
     }
 
     .product-deck-wrapper {
-        height: 440px;
+        height: 560px;
         margin-left: 0;
         width: 100%;
+        margin-bottom: 20px;
     }
 
     /* Adjust Card Transforms for Mobile */
     .hero-card {
         padding: 24px;
+        align-items: center;
+        text-align: center;
         transform: translateZ(-50px) translateX(10px) !important;
     }
 
@@ -3063,6 +3118,23 @@ body.menu-open .page-content-wrapper::before {
     opacity: 0.6;
 }
 
+img.spine-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 8px;
+    flex-shrink: 0;
+    filter: none;
+    opacity: 1;
+    display: block;
+    padding-bottom: 0;
+    /* cancel inherited 40px padding */
+    margin-top: auto;
+    /* push to bottom of flex column */
+    margin-bottom: 28px;
+    /* safe gap from bottom edge */
+}
+
 /* Expanded Content (Active State) */
 .acc-panel {
     position: absolute;
@@ -3092,6 +3164,14 @@ body.menu-open .page-content-wrapper::before {
     font-size: 4rem;
     margin-bottom: 24px;
     display: inline-block;
+}
+
+img.panel-icon-large {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    border-radius: 14px;
+    display: block;
 }
 
 .panel-title {
