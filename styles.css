@@ -591,98 +591,11 @@ h3 {
 }
 
 .card-icon-img {
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     object-fit: contain;
+    margin-bottom: 24px;
     border-radius: 12px;
-    transition: transform 0.3s ease;
-}
-
-/* Specific fix for i HR logo padding in hero deck */
-.hero-card img[src*="i HR"] {
-    transform: scale(1.4);
-    transform-origin: center;
-    mix-blend-mode: multiply;
-}
-
-.card-logo-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 16px;
-    overflow: hidden;
-    gap: 8px;
-}
-
-.hero-card a:hover .card-icon-img {
-    transform: scale(1.1);
-}
-
-.play-store-badge-link {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.play-store-badge-link:hover {
-    transform: translateY(-2px);
-}
-
-.play-store-badge {
-    height: 28px;
-    width: auto;
-    max-width: 100px;
-    display: block;
-}
-
-.panel-logo-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    gap: 12px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-/* Constrain any <a> that directly wraps a logo inside panel-logo-container */
-.panel-logo-container a {
-    display: inline-flex;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.panel-icon-img {
-    width: 80px;
-    height: 80px;
-    max-width: 80px;
-    max-height: 80px;
-    object-fit: contain;
-    border-radius: 14px;
-    transition: transform 0.3s ease;
-    display: block;
-    flex-shrink: 0;
-}
-
-/* Adjusting specific logos with extra white space in panels */
-.acc-panel img[src*="i HR"] {
-    transform: scale(1.5);
-    transform-origin: left center;
-    mix-blend-mode: multiply;
-}
-
-.acc-panel img[src*="i HR"]:hover {
-    transform: scale(1.6);
-}
-
-.panel-icon-img:not([src*="i HR"]):hover {
-    transform: scale(1.05);
-}
-
-/* Ensure JPEG product logos blend into white card backgrounds */
-.panel-icon-img,
-.card-icon-img {
-    mix-blend-mode: multiply;
 }
 
 .hero-card h3 {
