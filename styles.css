@@ -4197,3 +4197,100 @@ img.panel-icon-large {
         box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
     }
 }
+
+/* Trusted Institutions Section */
+.trusted-institutions-section {
+    padding: 80px 0;
+    background: var(--bg-primary, #ffffff);
+    text-align: center;
+    border-top: 1px solid var(--border-subtle, #e2e8f0);
+}
+
+.institution-featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.institution-main-logo {
+    max-height: 120px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.05));
+}
+
+.institution-name {
+    font-family: var(--font-display, 'Space Grotesk', sans-serif);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-main, #0f172a);
+}
+
+.launch-marquee-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+    background: var(--bg-secondary, #f8fafc);
+    border-top: 1px solid var(--border-subtle, #e2e8f0);
+    border-bottom: 1px solid var(--border-subtle, #e2e8f0);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.launch-marquee-track {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: max-content;
+    animation: marqueeScroll 25s linear infinite;
+}
+
+.launch-marquee-track.reverse {
+    animation-direction: reverse;
+}
+
+.launch-marquee-track:hover {
+    animation-play-state: paused;
+}
+
+.launch-img {
+    height: 250px;
+    width: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.launch-img:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+@keyframes marqueeScroll {
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Mobile Adjustments for Launch Marquee */
+@media (max-width: 768px) {
+    .launch-marquee-container {
+        padding: 24px 0;
+        gap: 20px;
+    }
+
+    .launch-marquee-track {
+        gap: 20px;
+    }
+
+    .launch-img {
+        height: 120px;
+        border-radius: 8px;
+    }
+}
