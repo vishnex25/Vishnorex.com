@@ -4294,3 +4294,257 @@ img.panel-icon-large {
         border-radius: 8px;
     }
 }
+
+/* Enhancements for smaller devices */
+@media (max-width: 600px) {
+    .visual-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .stat-card-float {
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: -30px;
+    }
+
+    .product-bottle-tall {
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: 20px;
+    }
+
+    .product-box-large {
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 0;
+    }
+}
+
+/* Comprehensive fixes for very small mobile devices (<480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .company-name-kicker {
+        font-size: 1.1rem;
+    }
+
+    .hero-sub {
+        font-size: 0.95rem;
+    }
+
+    .section-head h2,
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .display-title {
+        font-size: 2.2rem;
+    }
+
+    .cta-liquid-title {
+        font-size: 2.5rem;
+    }
+
+    .bento-card {
+        padding: 24px;
+    }
+
+    .bento-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .stat-item .number {
+        font-size: 3rem;
+    }
+
+    .about-replica-section,
+    .bento-section,
+    .stats-section,
+    .cta-banner,
+    .products-section,
+    .careers-section,
+    .contact-manifesto-section,
+    .contact-brainstorm-section,
+    .cta-banner-redesign,
+    .internship-section {
+        padding: 60px 0;
+    }
+
+    .footer-replica-section {
+        padding-top: 60px;
+    }
+
+    .manifesto-title {
+        font-size: 2rem;
+    }
+
+    .spec-form {
+        padding: 16px;
+    }
+
+    .form-group-sentence {
+        font-size: 1rem;
+    }
+
+    .input-inline,
+    .select-inline {
+        font-size: 1rem;
+        padding-left: 0;
+    }
+
+    .nav-logo {
+        height: 24px;
+    }
+
+    .floating-nav {
+        top: 10px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .nav-content {
+        padding: 10px 16px;
+        border-radius: 0;
+    }
+
+    .btn-primary,
+    .btn-outline,
+    .btn-submit-large,
+    .magnetic-cta-btn {
+        padding: 12px 24px;
+        font-size: 0.85rem;
+    }
+
+    .panel-icon-large {
+        font-size: 2.5rem;
+    }
+
+    img.panel-icon-large {
+        width: 40px;
+        height: 40px;
+    }
+
+    .f-col-brand {
+        min-width: 100%;
+    }
+}
+
+/* =========================================
+   ADDITIONAL RESPONSIVE FIXES FOR ALL DEVICES
+   ========================================= */
+
+@media (max-width: 1024px) {
+    .product-deck-wrapper {
+        margin-left: 0;
+        margin-top: 40px;
+        height: 450px;
+        width: 100%;
+    }
+    .hero-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    .left-align {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+    }
+    .hero-actions {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .trust-icons {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .manifesto-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .hero-center-logo {
+        display: none; /* Hide on mobile to free space */
+    }
+    .about-visuals-wrapper {
+        margin-bottom: 40px;
+    }
+    .mobile-reverse-grid {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .cta-layout {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .cta-action-zone {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .careers-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .stats-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .image-stack {
+        height: auto;
+        min-height: 250px;
+    }
+    .stack-card {
+        width: 100%;
+        position: relative;
+    }
+    .bg-blue {
+        display: none; /* Simplify on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-deck {
+        width: 100%;
+        max-width: 300px;
+    }
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn-primary, .btn-outline {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
