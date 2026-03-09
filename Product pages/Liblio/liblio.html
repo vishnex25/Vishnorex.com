@@ -13,18 +13,18 @@
         content="Liblio, Library Management System, LMS, Academic Library Software, Book Reservation, Fine Management, Gate Analytics, Vishnorex">
     <meta name="author" content="Vishnorex Technologies Pvt. Ltd.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://vishnorex.com/liblio-details.html">
+    <link rel="canonical" href="https://vishnorex.com/Product pages/Liblio/liblio.html">
 
     <!-- Open Graph -->
     <meta property="og:type" content="product">
-    <meta property="og:url" content="https://vishnorex.com/liblio-details.html">
+    <meta property="og:url" content="https://vishnorex.com/Product pages/Liblio/liblio.html">
     <meta property="og:title" content="Liblio — Smart Library Management System">
     <meta property="og:description"
         content="Bridge the gap between physical resource management and digital accessibility with Liblio.">
     <meta property="og:image" content="https://vishnorex.com/assets/Products-logo/liblio png.png">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/weblogo.png">
+    <link rel="icon" type="image/png" href="../../assets/weblogo.png">
 
     <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,9 +32,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="liblio-details.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../footer.css">
+    <link rel="stylesheet" href="liblio.css">
 
     <!-- Schema -->
     <script type="application/ld+json">
@@ -45,7 +45,7 @@
       "applicationCategory": "EducationalApplication",
       "operatingSystem": "Web, Android",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
-      "description": "A state-of-the-art Library Management System for modern academic institutions with real-time reservations, automated fines, and gate analytics.",
+      "description": "A state-of-the-art Library Management System for modern academic institutions.",
       "publisher": { "@type": "Organization", "name": "Vishnorex Technologies Pvt. Ltd." }
     }
     </script>
@@ -53,12 +53,11 @@
 
 <body>
 
-    <!-- Floating Navigation -->
-    <nav class="liblio-topnav">
+    <!-- Navigation — White Glass (matching main site) -->
+    <nav class="liblio-topnav" id="liblio-nav">
         <div class="nav-inner">
-            <a href="index.html" class="back-link">← Back to Home</a>
-            <a href="index.html"><img src="assets/logo.png" alt="Vishnorex" class="nav-logo-sm"
-                    style="filter: brightness(0) invert(1);"></a>
+            <a href="../../index.html" class="back-link">← Back to Home</a>
+            <a href="../../index.html"><img src="../../assets/logo.png" alt="Vishnorex" class="nav-logo-sm"></a>
             <a href="https://play.google.com/store/apps/details?id=com.vishnorex.liblio&pcampaignid=web_share"
                 target="_blank" rel="noopener noreferrer" class="nav-cta-sm">Get App</a>
         </div>
@@ -66,169 +65,227 @@
 
     <!-- ==================== HERO ==================== -->
     <section class="liblio-hero">
-        <div class="dot-overlay"></div>
-        <div class="container hero-inner">
-            <div class="hero-text-col">
-                <span class="hero-badge"><span class="pulse-dot"></span> Project Liblio</span>
-                <h1>The <span class="gradient-word">Autonomous</span><br>Library System.</h1>
-                <p class="hero-desc">
-                    Liblio bridges the gap between physical resource management and digital accessibility — serving
-                    students, librarians, and administrators with intelligent automation.
-                </p>
-                <div class="hero-actions-row">
-                    <a href="https://play.google.com/store/apps/details?id=com.vishnorex.liblio&pcampaignid=web_share"
-                        target="_blank" class="btn-hero-primary">
-                        Download App <span>→</span>
-                    </a>
-                    <a href="#features" class="btn-hero-outline">Explore Features</a>
-                </div>
-                <div class="hero-stats-row">
-                    <div class="hero-stat">
-                        <span class="stat-val">3</span>
-                        <span class="stat-lbl">User Portals</span>
-                    </div>
-                    <div class="hero-stat">
-                        <span class="stat-val">30-Day</span>
-                        <span class="stat-lbl">Fair-Access Protocol</span>
-                    </div>
-                    <div class="hero-stat">
-                        <span class="stat-val">24/7</span>
-                        <span class="stat-lbl">Cloud Uptime</span>
-                    </div>
-                </div>
+        <div class="hero-grid-bg"></div>
+        <div class="hero-glow"></div>
+
+        <div class="container hero-centered">
+            <h1 class="hero-title">The <span class="text-gradient">Autonomous</span><br>Library System.</h1>
+            <p class="hero-sub">
+                Bridging physical resource management &amp; digital accessibility — serving
+                students, librarians, and administrators with intelligent automation.
+            </p>
+            <div class="hero-btns">
+                <a href="https://play.google.com/store/apps/details?id=com.vishnorex.liblio&pcampaignid=web_share"
+                    target="_blank" class="btn-primary-lib">Download App <span>→</span></a>
+                <a href="#features" class="btn-outline-lib">Explore Features</a>
             </div>
-            <div class="hero-visual">
-                <img src="assets/Products-logo/liblio png.png" alt="Liblio Dashboard Preview">
+        </div>
+
+        <!-- Showcase: Product Card + Floating Metrics -->
+        <div class="container">
+            <div class="hero-showcase">
+                <div class="showcase-product-card">
+                    <img src="../../assets/Products-logo/liblio png.png" alt="Liblio">
+                    <div class="spc-info">
+                        <h3>Liblio</h3>
+                        <p>Automated cataloging, smart reservations, and gate analytics for modern academic libraries.
+                        </p>
+                        <div class="spc-tags">
+                            <span>Cloud-Native</span>
+                            <span>Fast Search</span>
+                            <span>3 Portals</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Metric Cards Row -->
+                <div class="hero-metrics-row">
+                    <div class="hero-metric">
+                        <div class="hm-icon blue">📚</div>
+                        <div class="hm-info">
+                            <span class="hm-val">10K+ Books</span>
+                            <span class="hm-label">Cataloged</span>
+                        </div>
+                    </div>
+                    <div class="hero-metric">
+                        <div class="hm-icon green">⚡</div>
+                        <div class="hm-info">
+                            <span class="hm-val">30-Day</span>
+                            <span class="hm-label">Fair-Access Protocol</span>
+                        </div>
+                    </div>
+                    <div class="hero-metric">
+                        <div class="hm-icon purple">🎓</div>
+                        <div class="hm-info">
+                            <span class="hm-val">3 Portals</span>
+                            <span class="hm-label">Student · Staff · Public</span>
+                        </div>
+                    </div>
+                    <div class="hero-metric">
+                        <div class="hm-icon amber">🚪</div>
+                        <div class="hm-info">
+                            <span class="hm-val">Gate Analytics</span>
+                            <span class="hm-label">Real-time Tracking</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ==================== FEATURES ==================== -->
-    <section id="features" class="features-section">
+    <section id="features" class="section-lib gray">
         <div class="container">
             <span class="section-eyebrow">Core Features</span>
-            <h2 class="liblio-section-title">Everything a Modern Library Needs</h2>
-            <p class="liblio-section-desc">From real-time reservations to holiday-aware fine calculations — Liblio
+            <h2 class="lib-section-title">Everything a Modern Library Needs</h2>
+            <p class="lib-section-desc">From real-time reservations to holiday-aware fine calculations — Liblio
                 covers every aspect of library operations.</p>
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🔍</div>
+                    <div class="feature-icon">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
                     <h3>Advanced Search Ecosystem</h3>
-                    <p>Global and granular search with filters by Author, Publication Year, ISBN, and Department. Find
-                        any resource instantly.</p>
+                    <p>Global and granular search with filters by Author, Publication Year, ISBN, and Department.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📋</div>
+                    <div class="feature-icon">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                        </svg>
+                    </div>
                     <h3>Smart Reservation Queue</h3>
-                    <p>Transparent waiting lists with automatic notifications. The 30-Day Auto-Close prevents dead-
-                        locking the catalog.</p>
+                    <p>Transparent waiting lists with automatic notifications. 30-Day Auto-Close prevents dead-locking.
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">💰</div>
+                    <div class="feature-icon">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
                     <h3>Holiday-Aware Fine Ledger</h3>
-                    <p>Intelligent grace periods that adapt to institutional calendars. Fines auto-calculated excluding
-                        configured holidays.</p>
+                    <p>Intelligent grace periods adapting to institutional calendars. Auto-calculated excluding
+                        holidays.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🚪</div>
+                    <div class="feature-icon">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"></path>
+                        </svg>
+                    </div>
                     <h3>Gate Entrance Analytics</h3>
-                    <p>Digital log of entry/exit times via student ID barcode scanning. Track library traffic and
-                        student presence in real-time.</p>
+                    <p>Digital log of entry/exit via student ID barcode. Real-time library traffic & presence tracking.
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📊</div>
+                    <div class="feature-icon">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
                     <h3>Reports & Analytics</h3>
-                    <p>Revenue reports, traffic analysis, most borrowed books, pending returns, and department-wise
-                        resource breakdowns.</p>
+                    <p>Revenue reports, traffic analysis, most borrowed books, and department-wise resource breakdowns.
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🤖</div>
+                    <div class="feature-icon">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                            <circle cx="12" cy="5" r="2"></circle>
+                            <path d="M12 7v4"></path>
+                            <line x1="8" y1="16" x2="8" y2="16"></line>
+                            <line x1="16" y1="16" x2="16" y2="16"></line>
+                        </svg>
+                    </div>
                     <h3>Self-Checkout Kiosks</h3>
-                    <p>Automated stations for students to borrow books independently. Reduce staff workload by up to
-                        40%.</p>
+                    <p>Automated stations for independent borrowing. Reduce staff workload by up to 40%.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== HOW IT WORKS ==================== -->
-    <section class="workflow-section">
+    <!-- ==================== WORKFLOW ==================== -->
+    <section class="section-lib white">
         <div class="container">
             <span class="section-eyebrow">Circulation Logic</span>
-            <h2 class="liblio-section-title">How the Reservation Workflow Operates</h2>
-            <p class="liblio-section-desc">Liblio employs an automated, fair-access workflow to manage book scarcity
-                transparently.</p>
+            <h2 class="lib-section-title">How the Reservation Workflow Operates</h2>
+            <p class="lib-section-desc">An automated, fair-access workflow to manage book scarcity transparently.</p>
 
-            <div class="workflow-timeline">
-                <div class="wf-step">
+            <div class="workflow-grid">
+                <div class="wf-card">
                     <div class="wf-num">1</div>
                     <h4>Discovery</h4>
                     <p>Student identifies a book via Advanced Search across catalogs, thesis, journals, and question
                         banks.</p>
                 </div>
-                <div class="wf-step">
+                <div class="wf-card">
                     <div class="wf-num">2</div>
                     <h4>Reserve or Queue</h4>
-                    <p>If available, reserve and collect within a specified window. If checked out, join the digital
-                        queue automatically.</p>
+                    <p>If available, reserve and collect. If checked out, join the digital queue automatically.</p>
                 </div>
-                <div class="wf-step">
+                <div class="wf-card">
                     <div class="wf-num">3</div>
                     <h4>Auto-Notify & Pickup</h4>
-                    <p>When returned, the next student receives a 24-hour Priority Pickup window. Missed? Automatically
-                        moves to the next.</p>
+                    <p>Next student gets a 24-hour Priority Pickup window. Missed? Moves to the next person.</p>
                 </div>
-                <div class="wf-step">
+                <div class="wf-card">
                     <div class="wf-num">4</div>
                     <h4>30-Day Fair Access</h4>
-                    <p>Reservations unfulfilled within 30 days are auto-closed. Books stay in motion — never trapped in
-                        dead queues.</p>
+                    <p>Unfulfilled reservations auto-close after 30 days. Books stay in motion, never trapped.</p>
                 </div>
-                <div class="wf-step">
+                <div class="wf-card">
                     <div class="wf-num">5</div>
                     <h4>Return & Check-in</h4>
-                    <p>Streamlined return process with automatic fine calculation. Holiday-aware ledger ensures fair
-                        penalties.</p>
+                    <p>Streamlined return with automatic fine calculation. Holiday-aware ledger ensures fairness.</p>
                 </div>
-                <div class="wf-step">
+                <div class="wf-card">
                     <div class="wf-num">6</div>
                     <h4>History & Insights</h4>
-                    <p>Complete chronological log of all transactions. Every book, every student, every fine — tracked
-                        and reportable.</p>
+                    <p>Complete chronological log. Every book, every student, every fine — tracked and reportable.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== USER PORTALS ==================== -->
-    <section class="portals-section">
+    <!-- ==================== PORTALS ==================== -->
+    <section class="section-lib gray">
         <div class="container">
             <span class="section-eyebrow">User Portals</span>
-            <h2 class="liblio-section-title">One System, Three Experiences</h2>
-            <p class="liblio-section-desc">Liblio serves public visitors, students, and staff — each with a tailored
-                interface designed for their specific needs.</p>
+            <h2 class="lib-section-title">One System, Three Experiences</h2>
+            <p class="lib-section-desc">Public visitors, students, and staff — each with a tailored interface.</p>
 
             <div class="portals-grid">
-                <!-- Public Portal -->
                 <div class="portal-card">
                     <div class="portal-icon blue">🌐</div>
                     <h3>Public Access</h3>
-                    <p>The entry point for discovery. Browse the full catalog without logging in.</p>
+                    <p>Entry point for discovery. Browse the full catalog without logging in.</p>
                     <ul class="portal-features">
-                        <li>Comprehensive catalog of all physical & digital assets</li>
+                        <li>Comprehensive catalog of physical & digital assets</li>
                         <li>Question Banks & previous exam papers</li>
                         <li>Thesis & academic research papers</li>
                         <li>Journals & scholarly articles</li>
                         <li>Advanced search by Author, ISBN, or Department</li>
                     </ul>
                 </div>
-
-                <!-- Student Portal -->
                 <div class="portal-card">
                     <div class="portal-icon purple">🎓</div>
                     <h3>Student Portal</h3>
-                    <p>A personalized ecosystem for managing academic resources and borrowing activity.</p>
+                    <p>Personalized ecosystem for academic resources and borrowing activity.</p>
                     <ul class="portal-features">
                         <li>Quick availability check for campus books</li>
                         <li>At-a-glance: Borrowed, Reserved, Read, Fines</li>
@@ -237,8 +294,6 @@
                         <li>Profile with Roll No, Card Validity & Dept</li>
                     </ul>
                 </div>
-
-                <!-- Admin Portal -->
                 <div class="portal-card">
                     <div class="portal-icon emerald">🛡️</div>
                     <h3>Admin & Management</h3>
@@ -255,59 +310,53 @@
         </div>
     </section>
 
-    <!-- ==================== COMPARISON TABLE ==================== -->
-    <section class="comparison-section">
+    <!-- ==================== COMPARISON ==================== -->
+    <section class="section-lib white">
         <div class="container">
             <span class="section-eyebrow">Competitive Edge</span>
-            <h2 class="liblio-section-title">Liblio vs. Traditional Smart LMS</h2>
-            <p class="liblio-section-desc">See how Liblio outperforms industry leaders like Koha, Alma, and
-                SirsiDynix.</p>
+            <h2 class="lib-section-title">Liblio vs. Traditional Library Management System</h2>
+            <p class="lib-section-desc">How Liblio outperforms other library management systems.</p>
 
-            <div class="comparison-table-wrap">
+            <div class="comparison-wrap">
                 <table class="comparison-table">
                     <thead>
                         <tr>
                             <th>Feature</th>
-                            <th>Traditional Smart LMS</th>
-                            <th class="highlight-col">Liblio's Edge</th>
+                            <th>Traditional Library Management System</th>
+                            <th>Liblio's Edge</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Attendance</td>
                             <td>Manual or basic RFID gates</td>
-                            <td class="highlight-col">Integrated Gate Analytics: Real-time occupancy linked to student
-                                academic profiles</td>
+                            <td class="edge-col">Integrated Gate Analytics with real-time occupancy tracking</td>
                         </tr>
                         <tr>
                             <td>Circulation</td>
                             <td>Basic Issue / Return / Renew</td>
-                            <td class="highlight-col">Smart Queue Expiry: 30-Day Auto-Close prevents catalog
-                                dead-locking</td>
+                            <td class="edge-col">Smart Queue Expiry: 30-Day Auto-Close prevents dead-locking</td>
                         </tr>
                         <tr>
                             <td>Search</td>
                             <td>Standard OPAC only</td>
-                            <td class="highlight-col">Resource Hierarchy: Tiered for academics — Thesis, Question
-                                Banks, Journals prioritized</td>
+                            <td class="edge-col">Resource Hierarchy tiered for academics — Thesis, Q-Banks, Journals
+                            </td>
                         </tr>
                         <tr>
                             <td>Fines</td>
                             <td>Basic daily calculation</td>
-                            <td class="highlight-col">Holiday-Aware Ledger: Intelligent grace periods adapting to
-                                institutional calendars</td>
+                            <td class="edge-col">Holiday-Aware Ledger adapting to institutional calendars</td>
                         </tr>
                         <tr>
                             <td>Self-Service</td>
                             <td>Limited kiosk support</td>
-                            <td class="highlight-col">Geo-Fenced Self-Checkout via smartphone with GPS/WiFi
-                                verification</td>
+                            <td class="edge-col">Geo-Fenced Self-Checkout via smartphone GPS/WiFi</td>
                         </tr>
                         <tr>
-                            <td>Demand Prediction</td>
+                            <td>AI</td>
                             <td>None</td>
-                            <td class="highlight-col">AI-Lite: Predicts high-demand books based on exam calendars &
-                                academic data</td>
+                            <td class="edge-col">Predictive demand based on exam calendars & academic data</td>
                         </tr>
                     </tbody>
                 </table>
@@ -316,12 +365,11 @@
     </section>
 
     <!-- ==================== SELLING POINTS ==================== -->
-    <section class="selling-section">
+    <section class="section-lib gray">
         <div class="container">
-            <span class="section-eyebrow" style="color: #93c5fd;">Hero Features</span>
-            <h2 class="liblio-section-title" style="color: #fff;">Why Institutions Choose Liblio</h2>
-            <p class="liblio-section-desc" style="color: #94a3b8;">Four pillars that make Liblio the market-leading
-                choice for academic library management.</p>
+            <span class="section-eyebrow">Why Liblio</span>
+            <h2 class="lib-section-title">Why Institutions Choose Liblio</h2>
+            <p class="lib-section-desc">Four pillars that make Liblio the market-leading choice.</p>
 
             <div class="selling-grid">
                 <div class="sell-card">
@@ -329,28 +377,28 @@
                     <h3>The 30-Day Fair-Access Protocol</h3>
                     <p class="sell-pitch">"Stop hoarding, start sharing."</p>
                     <p>Prevents popular books from being trapped in long reservation queues. Ensures physical inventory
-                        is always in motion and accessible to the entire student body.</p>
+                        is always in motion.</p>
                 </div>
                 <div class="sell-card">
                     <div class="sell-num">02</div>
                     <h3>Gate-to-Grade Analytics</h3>
                     <p class="sell-pitch">"Understand the link between library usage and student success."</p>
-                    <p>Generate reports showing which departments spend the most time in the library — a powerful tool
-                        for institutional accreditation (NAAC / ABET).</p>
+                    <p>Generate reports on department library activity — a powerful tool for NAAC / ABET accreditation.
+                    </p>
                 </div>
                 <div class="sell-card">
                     <div class="sell-num">03</div>
                     <h3>The Zero-Touch Circulation</h3>
                     <p class="sell-pitch">"A library that runs itself."</p>
-                    <p>Self-Checkout + Holiday-Management engine lets administrators reduce staff workload by 40%.
-                        System handles fine calculations and simple check-outs autonomously.</p>
+                    <p>Self-Checkout + Holiday-Management engine reduces staff workload by 40%. Autonomous fine
+                        calculations.</p>
                 </div>
                 <div class="sell-card">
                     <div class="sell-num">04</div>
                     <h3>Unified Academic Hub</h3>
                     <p class="sell-pitch">"More than just books — a complete academic memory."</p>
-                    <p>Position Liblio as a repository for institutional knowledge — integrating Thesis documents,
-                        previous years' Question Banks, and Media in one searchable platform.</p>
+                    <p>Thesis documents, Question Banks, and Media in one searchable platform for institutional
+                        knowledge.</p>
                 </div>
             </div>
         </div>
@@ -363,8 +411,8 @@
             <p>Join forward-thinking institutions already using Liblio to automate their library operations.</p>
             <div class="cta-btns">
                 <a href="https://play.google.com/store/apps/details?id=com.vishnorex.liblio&pcampaignid=web_share"
-                    target="_blank" class="btn-cta-primary">Get Liblio Free →</a>
-                <a href="index.html#contact" class="btn-cta-outline">Contact Sales</a>
+                    target="_blank" class="btn-cta-white">Get Liblio Free →</a>
+                <a href="../../index.html#contact" class="btn-cta-ghost">Contact Sales</a>
             </div>
         </div>
     </section>
@@ -376,7 +424,7 @@
         <div class="container relative z-10">
             <div class="footer-main-grid">
                 <div class="footer-brand-col">
-                    <img src="assets/logo-footer.png" alt="Vishnorex" class="footer-logo">
+                    <img src="../../assets/logo-footer.png" alt="Vishnorex" class="footer-logo">
                     <p class="footer-tagline">Architecting the digital future with precision, intelligence, and
                         unwavering excellence.</p>
                     <div class="social-links-glass">
@@ -415,10 +463,10 @@
                 <div class="footer-nav-col">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="index.html#about">About Us</a></li>
-                        <li><a href="index.html#services">Capabilities</a></li>
-                        <li><a href="index.html#products">Products</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="../../index.html#about">About Us</a></li>
+                        <li><a href="../../index.html#services">Capabilities</a></li>
+                        <li><a href="../../index.html#products">Products</a></li>
+                        <li><a href="../../index.html#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-nav-col">
@@ -426,7 +474,7 @@
                     <ul>
                         <li><a href="#features">Features</a></li>
                         <li><a href="liblio-terms.html">Terms & Conditions</a></li>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact-col">
@@ -438,14 +486,15 @@
                 </div>
             </div>
             <div class="footer-bottom-bar">
-                <div class="legal-links">
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                </div>
+                <div class="legal-links"><a href="/Product pages/Liblio/liblio-terms.html">Privacy Policy</a></div>
                 <span>&copy; <span id="current-year"></span> Vishnorex Technologies Pvt. Ltd.</span>
                 <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="liblio.js"></script>
 
 </body>
 

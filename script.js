@@ -550,3 +550,74 @@ if (contactForm) {
         }
     });
 }
+
+// =========================================
+// Emoji Blast Animation
+// =========================================
+const emojis = document.querySelectorAll('.rating-stars span');
+emojis.forEach(emoji => {
+    emoji.style.cursor = 'pointer';
+    emoji.style.display = 'inline-block'; // Required for transform
+    emoji.addEventListener('click', function(e) {
+        const char = this.innerText;
+        createEmojiBlast(e.clientX, e.clientY, char);
+        
+        // Add a little pop effect to the clicked emoji
+        gsap.fromTo(this, 
+            { scale: 1 }, 
+            { scale: 1.5, duration: 0.15, yoyo: true, repeat: 1, ease: "power1.inOut" }
+        );
+    });
+});
+
+function createEmojiBlast(x, y, char) {
+    const blastContainer = document.createElement('div');
+    blastContainer.style.position = 'fixed';
+    blastContainer.style.top = '0';
+    blastContainer.style.left = '0';
+    blastContainer.style.width = '100vw';
+    blastContainer.style.height = '100vh';
+    blastContainer.style.pointerEvents = 'none';
+    blastContainer.style.zIndex = '99999';
+    blastContainer.style.overflow = 'hidden';
+    document.body.appendChild(blastContainer);
+
+    const numEmojis = 12 + Math.floor(Math.random() * 8); // 12-20 emojis
+    
+    for (let i = 0; i < numEmojis; i++) {
+        const emojiEl = document.createElement('div');
+        emojiEl.innerText = char;
+        emojiEl.style.position = 'absolute';
+        // Center the spawn point on the mouse
+        emojiEl.style.left = `${x - 15}px`; 
+        emojiEl.style.top = `${y - 15}px`;
+        emojiEl.style.fontSize = `${Math.random() * 15 + 20}px`; // 20px - 35px
+        emojiEl.style.userSelect = 'none';
+        
+        blastContainer.appendChild(emojiEl);
+
+        const angle = Math.random() * Math.PI * 2;
+        const velocity = Math.random() * 100 + 80;
+        
+        // Calculate destination
+        const tx = Math.cos(angle) * velocity;
+        const ty = Math.sin(angle) * velocity - (Math.random() * 80 + 40); // Bias upward
+
+        gsap.to(emojiEl, {
+            x: tx,
+            y: ty,
+            rotation: Math.random() * 360 - 180,
+            opacity: 0,
+            duration: Math.random() * 0.6 + 0.6,
+            ease: "power2.out",
+            onComplete: () => {
+                emojiEl.remove();
+            }
+        });
+    }
+    
+    // Cleanup container
+    setTimeout(() => {
+        blastContainer.remove();
+    }, 1500);
+}
