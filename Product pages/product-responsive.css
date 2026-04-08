@@ -458,7 +458,7 @@ body {
 .liblio-cta,
 .vt-cta,
 .cp-cta {
-    padding: 60px 0;
+    padding: 60px 0 140px 0;
 }
 
 .liblio-cta h2,
@@ -837,7 +837,7 @@ body {
     .liblio-cta,
     .vt-cta,
     .cp-cta {
-        padding: 80px 0;
+        padding: 80px 0 160px 0;
     }
 
     .footer-redesign {
@@ -1090,11 +1090,11 @@ body {
     .liblio-cta,
     .vt-cta,
     .cp-cta {
-        padding: 90px 0;
+        padding: 90px 0 180px 0;
     }
 
     .footer-redesign {
-        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 80px, 100% 0, 100% 100%, 0% 100%);
         padding-top: 180px;
     }
 

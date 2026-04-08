@@ -4382,9 +4382,12 @@ img.panel-icon-large {
     .careers-section,
     .contact-manifesto-section,
     .contact-brainstorm-section,
-    .cta-banner-redesign,
     .internship-section {
         padding: 60px 0;
+    }
+
+    .cta-banner-redesign {
+        padding: 60px 0 140px 0;
     }
 
     .footer-replica-section {
@@ -4576,5 +4579,88 @@ img.panel-icon-large {
         width: 100%;
         text-align: center;
         justify-content: center;
+    }
+}
+
+/* WhatsApp Floating Toggle Button */
+.whatsapp-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    text-decoration: none;
+    z-index: 10000;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    gap: 0;
+}
+
+.whatsapp-toggle .wa-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.whatsapp-toggle .wa-text {
+    max-width: 0;
+    opacity: 0;
+    white-space: nowrap;
+    padding-left: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.whatsapp-toggle:hover {
+    padding: 12px 24px;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+    transform: translateY(-3px);
+}
+
+.whatsapp-toggle:hover .wa-text {
+    max-width: 150px;
+    opacity: 1;
+    padding-left: 12px;
+}
+
+@keyframes waPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.whatsapp-toggle {
+    animation: waPulse 2.5s infinite;
+}
+
+.whatsapp-toggle:hover {
+    animation: none;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-toggle {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px;
+    }
+    .whatsapp-toggle .wa-icon {
+        width: 28px;
+        height: 28px;
+    }
+    .whatsapp-toggle:hover {
+        padding: 12px 20px;
     }
 }
