@@ -572,9 +572,9 @@ h3 {
 }
 
 /* Hide cards far back to prevent clutter */
-.hero-card[style*="--i:3"],
-.hero-card[style*="--i:4"] {
-    /* Optional: Hide 4th+ card or just let them stack fade out */
+.hero-card[style*="--i:4"],
+.hero-card[style*="--i:5"] {
+    /* Hide 5th+ card to keep the stack clean */
     opacity: 0;
 }
 
